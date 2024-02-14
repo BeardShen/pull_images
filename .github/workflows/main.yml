@@ -29,7 +29,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           docker pull docker.io/calico/cni:v3.27.0
-          docker tag docker.io/calico/cni:v3.27.0 pradocker/cni:v3.27
+          docker tag docker.io/calico/cni:v3.27.0 beardshen/changehtml:v3.27
       
       - name: Log in to Docker Hub
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
@@ -40,5 +40,5 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Push to Docker Registry
         run: |
-          docker push pradocker/cni:v3.27
+          docker push beardshen/changehtml:v3.27
 
