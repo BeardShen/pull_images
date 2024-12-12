@@ -28,8 +28,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          docker pull quay.io/coreos/etcd:v3.4.26
-          docker tag quay.io/coreos/etcd:v3.4.26 beardshen/changehtml:etcdv3.4.26
+          docker pull vx3r/wg-gen-web：latest  
+          docker tag vx3r/wg-gen-web：latest beardshen/changehtml:wglatest
       
       - name: Log in to Docker Hub
         uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
@@ -40,4 +40,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Push to Docker Registry
         run: |
-          docker push beardshen/changehtml:etcdv3.4.26
+          docker push beardshen/changehtml:wglatest
